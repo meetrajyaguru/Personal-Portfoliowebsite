@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "secretlint": "secretlint \"**/*\"",
+    "security:check": "npm audit && npm run secretlint"
+  },
+  "dependencies": {
+    "@splinetool/react-spline": "^4.1.0",
+    "framer-motion": "^12.42.0",
+    "lucide-react": "^1.21.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.0",
+    "styled-components": "^6.4.3"
+  },
+  "devDependencies": {
+    "@secretlint/secretlint-rule-preset-recommend": "^13.0.7",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "oxlint": "^1.69.0",
+    "secretlint": "^13.0.7",
+    "vite": "^8.1.0"
+  }
+}
